@@ -8,8 +8,8 @@ const CollectionItem = ({id, name, price, imageUrl}) => (
             style = {{backgroundImage: `url(${imageUrl})`
             }}
         />
-        <span classNAme = 'name'>{ name }</span>
-        <span classNAme = 'price'>{ price }</span>   
+        <span className = 'name'>{ name }</span>
+        <span className = 'price'>{ price }</span>   
     </div>
 )
 
