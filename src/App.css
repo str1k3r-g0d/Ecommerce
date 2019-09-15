@@ -1,4 +1,15 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
-  padding: 20px 60px;
+ 
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+a:hover {
+  color: blue;
 }
