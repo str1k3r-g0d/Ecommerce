@@ -42,7 +42,7 @@ class SignIn extends Component {
                 <h2>I already have an account</h2>
                 <span>Sign In with your email and password.</span>
 
-                <form onSubmit = {this.handleSubmit}>
+                <form>
                     <FormInput 
                     name = "email" 
                     label = "email" 
@@ -63,10 +63,10 @@ class SignIn extends Component {
                     />
                     
                     <div className = "button">
-                    <CustomButton type = 'submit'>
+                    <CustomButton onClick = {this.handleSubmit}>
                         Sign In
                     </CustomButton>                  
-                    <CustomButton onClick = { signInWithGoogle } isGoogleSignIn>
+                    <CustomButton onClick = {() => signInWithGoogle()} isGoogleSignIn>
                         Google
                     </CustomButton>
                     </div>
