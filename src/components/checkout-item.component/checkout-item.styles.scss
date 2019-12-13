@@ -28,6 +28,19 @@
       margin-right: 1%;
   }
 
+  .quantity {
+    display: flex;
+
+      .arrow {
+        cursor: pointer;
+      }
+
+      .value {
+        padding-top: 5px;
+        margin: 0 10px;
+      }
+  }
+
 
   .remove-button {
     padding-left: 12px;
