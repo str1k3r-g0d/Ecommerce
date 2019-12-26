@@ -10,7 +10,7 @@ const SignInAndSignUpPage = () => (
         </div>
         
         <div className = "SignUp">
-        <SignUp />
+            <SignUp />
         </div>
     </div>
 );

@@ -9,7 +9,7 @@ import {createStructuredSelector} from 'reselect';
 import {selectCartHidden} from '../../redux/cart/cart.selectors';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
 
-import {HeaderContainer, LogoContainer, OptionDiv, OptionLink, OptionsContainer} from './header.styles';
+import {HeaderContainer, LogoContainer, OptionLink, OptionsContainer} from './header.styles';
 
 const Header = ({ currentUser, hidden }) => (
     <HeaderContainer>
@@ -25,9 +25,9 @@ const Header = ({ currentUser, hidden }) => (
                 CONTACT
             </OptionLink>
             {currentUser ? (
-                <OptionDiv onClick = {() => auth.signOut()}>
+                <OptionLink as = 'div' onClick = {() => auth.signOut()}>
                     SIGN OUT
-                </OptionDiv>
+                </OptionLink>
             ) : (
                     <OptionLink to = '/signin'>
                         SIGN IN
